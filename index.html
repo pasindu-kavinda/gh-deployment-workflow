@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages Deployment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .centered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #1a1a1a;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        .gradient-text {
+            font-size: 50px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -o-background-clip: text;
+            background-clip: text;
+            -webkit-animation: animate 8s ease-in-out infinite;
+            -moz-animation: animate 8s ease-in-out infinite;
+            -o-animation: animate 8s ease-in-out infinite;
+            animation: animate 8s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centered">
+        <span class="gradient-text">Hello, GitHub Actions!!</span>
+    </div>
+</body>
+
+</html>
